@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #fa6600;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***Event form*** */
+#event-subscription {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--primary);
+}
+
+#disclaimer h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#disclaimer .about-event {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#disclaimer p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+  font-weight: bold;
+}
+
+#subscription-form {
+  background-color: var(--secondary);
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2em;
+}
+
+#subscription-form p {
+  font-size: 1.2em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* 1ª Digitação (Aqui) */
+
+/* Models */
+#models {
+  padding: 2em;
+  text-align: center;
+}
+
+#models h2 {
+  margin-bottom: 1em;
+}
+
+.models-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.model-item {
+  max-width: 250px;
+}
+
+.model-img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+#model-1 {
+  background-image: url("../img/hd1.jpg");
+}
+
+#model-2 {
+  background-image: url("../img/hd2.jpg");
+}
+
+#model-3 {
+  background-image: url("../img/hd3.jpg");
+}
+
+/* Location */
+#location {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../img/hd1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+#address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+#address-details p {
+  margin: 0.3em 0;
+}
+
+/* Details */
+#details {
+  padding: 3em 2em;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.detail img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.detail-description {
+  max-width: 500px;
+}
+
+.detail-description h3 {
+  margin-bottom: 1em;
+}
+
+.detail-description ul {
+  list-style: disc;
+  padding-left: 1.2em;
+}
+
+/* CTA */
+#cta {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("../img/moto6.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+#cta h3 {
+  margin-bottom: 1em;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #848484;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  #event-subscription {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  #disclaimer h2 {
+    font-size: 3em;
+  }
+
+  #disclaimer .about-event {
+    font-size: 2em;
+  }
+
+  
+}
